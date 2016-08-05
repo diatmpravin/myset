@@ -3,11 +3,15 @@ package com.example;
 import java.util.HashMap;
 
 public class ASet {
-
-	// Create New Set
-	public HashMap<Integer, String> NewASet() {
-		HashMap<Integer, String> m = new HashMap<Integer, String>();
-		return m;
+	
+	HashMap<String, Boolean> m = new HashMap<String, Boolean>();
+	
+	// Return size of Set
+	public Integer Size(){
+		return m.size();
 	}
 
+	public void Add(String str) {
+		m.put(str, true);
+	}
 }
