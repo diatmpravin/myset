@@ -13,6 +13,12 @@ public class ASetShould {
 	}
 	
 	@Test
+	public void notContainAnyItem(){
+		assertEquals("", set.Contain("pravin"));
+		assertEquals("", set.Contain("dev"));
+	}
+	
+	@Test
 	public void addItem(){
 		set.Add("pravin");
 		set.Add("deo");
