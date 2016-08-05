@@ -32,6 +32,7 @@ public class ASet {
 		m.remove(str);
 	}
 
+	// Clear set
 	public void Clear() {
 		m.clear();
 	}
