@@ -38,4 +38,14 @@ public class ASetShould {
 		assertEquals("pravin", set.Contain("pravin"));
 		assertEquals("manoj", set.Contain("manoj"));
 	}
+	
+	@Test
+	public void noContain() {
+		set.Add("pravin");
+		set.Add("deo");
+		set.Add("manoj");
+		
+		assertEquals("", set.Contain("pravin1"));
+		assertEquals("", set.Contain("manoj1"));
+	}
 }
