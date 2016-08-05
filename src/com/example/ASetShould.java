@@ -19,4 +19,13 @@ public class ASetShould {
 		set.Add("manoj");
 		assertEquals(Integer.valueOf(3), set.Size());
 	}
+	
+	@Test 
+	public void noDuplicateItem(){
+		set.Add("pravin");
+		set.Add("deo");
+		set.Add("manoj");
+		set.Add("deo");
+		assertEquals(Integer.valueOf(3), set.Size());
+	}
 }
