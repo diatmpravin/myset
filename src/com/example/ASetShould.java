@@ -62,4 +62,15 @@ public class ASetShould {
 		assertEquals(Integer.valueOf(2), set.Size());
 		assertEquals("", set.Contain("deo"));
 	}
+	
+	@Test
+	public void clearItems(){
+		set.Add("pravin");
+		set.Add("deo");
+		set.Add("manoj");
+		
+		set.Clear();
+		
+		assertEquals(Integer.valueOf(0), set.Size());
+	}
 }

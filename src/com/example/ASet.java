@@ -31,4 +31,8 @@ public class ASet {
 	public void Remove(String str) {
 		m.remove(str);
 	}
+
+	public void Clear() {
+		m.clear();
+	}
 }
