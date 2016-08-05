@@ -48,4 +48,18 @@ public class ASetShould {
 		assertEquals("", set.Contain("pravin1"));
 		assertEquals("", set.Contain("manoj1"));
 	}
+	
+	@Test
+	public void removeItem(){
+		set.Add("pravin");
+		set.Add("deo");
+		set.Add("manoj");
+		
+		assertEquals(Integer.valueOf(3), set.Size());
+		
+		set.Remove("deo");
+		
+		assertEquals(Integer.valueOf(2), set.Size());
+		assertEquals("", set.Contain("deo"));
+	}
 }

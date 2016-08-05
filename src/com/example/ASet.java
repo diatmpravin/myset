@@ -11,10 +11,12 @@ public class ASet {
 		return m.size();
 	}
 
+	// Add new item to Set
 	public void Add(String str) {
 		m.put(str, true);
 	}
 
+	// Return requested element is present
 	public String Contain(String str) {
 		Boolean v = m.get(str);
 		if (v != null){
@@ -23,5 +25,10 @@ public class ASet {
 			return "";
 		}
 		
+	}
+
+	// Remove element from set
+	public void Remove(String str) {
+		m.remove(str);
 	}
 }
