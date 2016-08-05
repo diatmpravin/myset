@@ -13,7 +13,7 @@ public class ASetShould {
 	}
 	
 	@Test
-	public void addItemToSet(){
+	public void addItem(){
 		set.Add("pravin");
 		set.Add("deo");
 		set.Add("manoj");
@@ -27,5 +27,15 @@ public class ASetShould {
 		set.Add("manoj");
 		set.Add("deo");
 		assertEquals(Integer.valueOf(3), set.Size());
+	}
+	
+	@Test
+	public void containItem(){
+		set.Add("pravin");
+		set.Add("deo");
+		set.Add("manoj");
+		
+		assertEquals("pravin", set.Contain("pravin"));
+		assertEquals("manoj", set.Contain("manoj"));
 	}
 }

@@ -14,4 +14,14 @@ public class ASet {
 	public void Add(String str) {
 		m.put(str, true);
 	}
+
+	public String Contain(String str) {
+		Boolean v = m.get(str);
+		if (v != null){
+			return str;
+		} else {
+			return "";
+		}
+		
+	}
 }
